@@ -25,7 +25,7 @@ const handleCreateQuestionnaire = () => {
     questionnaireName: $('#surveyName').val(),
     projectContent: $('#surveyDescription').val(),
     startTime: $('#startDate').val() && new Date($('#startDate').val()).getTime(),
-    endTime: $('#endDate').val() && new Date($('#endDate').val()).getTime(),
+    stopTime: $('#endDate').val() && new Date($('#endDate').val()).getTime(),
     surveyObject: localStorage.getItem("type"),
     projectId: localStorage.getItem("projectId")
   }

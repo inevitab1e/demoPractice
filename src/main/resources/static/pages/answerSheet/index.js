@@ -65,7 +65,7 @@ const getQuestionList = ()=>{
     <div class="question" id="question1" data-type="1" data-problemIndex="1">
       <div class="top">
         <span class="question-title" id="questionTitle">${index +1}.${item.questionName},填空题</span>
-        <span class="must-answer" id="mustAnswer">${item.isMust==='true'?'必答题':'非必答题'}/span>
+        <span class="must-answer" id="mustAnswer">${item.isMust==='true'?'必答题':'非必答题'}</span>
       </div>
       <div class="bottom">
         <textarea class="form-control" placeholder="请输入" rows="4" style="width: 70%;"></textarea>
@@ -172,8 +172,6 @@ const handleSubmit = ()=>{
             }
         })
     })
-
-
 
     let params = {
         roleId ,

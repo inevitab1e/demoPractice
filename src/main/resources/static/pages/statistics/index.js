@@ -50,6 +50,7 @@ new Vue({
                 return e.json()
             })
             this.answerData = res.data
+            console.log(this.answerData)
         },
         handleClickBack(){
             history.back()

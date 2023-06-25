@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface QuestionnaireMapper {
-    @Select("select * from questionnaire_info where project_id = #{projectId};")
+    @Select("select * from questionnaire_info where project_id = #{projectId} and questionnaire_status = '1';")
     List<QuestionnaireEntity> queryQuestionnaireList(QuestionnaireEntity questionnaireEntity);
 
     @Insert("insert into questionnaire_info " +
