@@ -98,8 +98,8 @@
                         </goals>
                         <configuration>
                             <includes>
-                                <include>com/neu/controller/*</include>
-                                <include>com/neu/service/*</include>
+                                <include>com/sisp/controller/*</include>
+                                <include>com/sisp/service/*</include>
                             </includes>
                         </configuration>
                     </execution>
